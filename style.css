@@ -1,0 +1,86 @@
+body {
+  background-color: teal;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calculator-screen {
+  width: 90%;
+  height: 50px;
+  font-size: 35px;
+  text-align: right;
+  border-radius: 20px;
+  outline: 0px;
+  padding-right: 10px;
+  padding-left: 20px;
+  border: 0px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255 93 0);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  box-shadow: inset 3px -2px 0px 1px rgb(32 32 32);
+}
+
+.calculator {
+  width: 312px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  margin-top: 100px;
+  border-radius: 25px;
+  border: 2px solid rgb(29, 29, 29);
+  background-color: rgb(59, 59, 59);
+  box-shadow: 5px -5px 0 2px rgb(32, 32, 32);
+}
+
+.operator-keys {
+  width: 28%;
+  margin-top: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.number-keys {
+  width: 70%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.operator-keys .btn {
+  background-color: rgb(165, 153, 153);
+  box-shadow: inset -4px 1px 10px 1px rgb(35 35 35);
+  transition: box-shadow 0.1s, color 0.1s;
+  border: 1px solid rgb(31 31 31);
+}
+
+.btn {
+  margin: 5px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255 123 0);
+  color: white;
+  outline: 0px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 700;
+  border: 1px solid rgb(64 37 12);
+  box-shadow: inset -4px 1px 10px 1px rgb(93 52 13);
+}
+
+.btn.red {
+  background-color: rgb(200, 10, 112);
+}
+
+.btn.blue {
+  background-color: rgb(2, 104, 104);
+  box-shadow: inset -4px 1px 10px 1px rgb(35 35 35);
+}
+
+.btn:active {
+  box-shadow: inset -1px 0px 16px 2px rgb(146 146 146);
+  color: rgb(255 123 0);
+  background-color: #5d5252;
+}
